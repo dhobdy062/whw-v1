@@ -1,0 +1,7 @@
+.worktrees/
+node_modules/
+.vinext/
+.open-next/
+dist/
+.DS_Store
+.superpowers/
