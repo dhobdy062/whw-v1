@@ -55,8 +55,9 @@ Create an owned lead-generation asset that can convert seller valuation requests
 - [x] PRODUCT.md and written design specification created.
 - [x] Revised specification approved by Don on July 13, 2026.
 - [x] Executable implementation plan created.
-- [ ] Implementation complete.
-- [ ] Build and experience verification complete.
+- [x] Task 1 Sites foundation and production-build verification complete.
+- [ ] Full approved-site implementation complete.
+- [ ] Full experience verification complete.
 - [ ] Private review URL published.
 
 ### Open Issues
