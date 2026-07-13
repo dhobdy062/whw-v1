@@ -1,6 +1,7 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { metadata } from "../app/layout";
+import MarketMindsetPage from "../app/market-mindset/page";
 import HomePage from "../app/page";
 
 describe("site identity", () => {
@@ -29,4 +30,14 @@ it("renders the approved seller authority message", () => {
     /<a[^>]*href="#contact"[^>]*>\s*Request a Private Valuation\s*<\/a>/i,
   );
   expect(html).toMatch(/<h2[^>]*>Market Mindset<\/h2>/i);
+});
+
+it("renders crawlable links for every Market Mindset answer", () => {
+  const html = renderToStaticMarkup(<MarketMindsetPage />);
+  const answerLinks = html.match(
+    /<a[^>]*href="\/market-mindset\/[^\"]+"[^>]*>Read Warren&#x27;s answer<\/a>/g,
+  );
+
+  expect(answerLinks).toHaveLength(8);
+  expect(html.match(/<section[^>]*id="topic-/g)).toHaveLength(7);
 });

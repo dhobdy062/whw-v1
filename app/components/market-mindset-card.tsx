@@ -30,7 +30,7 @@ export function MarketMindsetCard({ entry }: MarketMindsetCardProps) {
       <p>{excerpt}</p>
       <div className="mindset-status">
         <span>Video answer coming soon</span>
-        <a href={`/market-mindset/${entry.slug}`}>Read the answer</a>
+        <a href={`/market-mindset/${entry.slug}`}>Read Warren&apos;s answer</a>
       </div>
     </article>
   );
