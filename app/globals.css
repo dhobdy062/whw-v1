@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: oklch(1 0 0);
+  --color-surface: oklch(0.965 0.004 250);
+  --color-ink: oklch(0.16 0.025 255);
+  --color-muted: oklch(0.43 0.025 255);
+  --color-primary: oklch(0.64 0.145 68);
+  --color-primary-deep: oklch(0.42 0.115 68);
+  --color-compass: oklch(0.54 0.205 28);
+  --color-line: oklch(0.86 0.01 255);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --space-page: clamp(1.25rem, 4vw, 4.5rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme inline {
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-ink);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-serif: Georgia, Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-ink);
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, serif;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+p {
+  max-width: 72ch;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

@@ -44,6 +44,7 @@ Create an owned lead-generation asset that can convert seller valuation requests
 - [x] Sales-volume and designation claims confirmed by Don for inclusion; retain source evidence in the launch record.
 - [ ] Fair Housing, privacy/consent, and lead-handling language reviewed.
 - [ ] Supplied/Instagram photos, listing media, testimonials, logos, and third-party assets have documented publication permission.
+- [x] Don supplied `warren-hall-top-100.png` in this task and approved it for the private review build.
 - [ ] Public release remains disabled until Warren/BIC approval; private review is clearly identified.
 - [x] Public launch, live lead submission, real listing/testimonial publication, and brokerage-logo use are excluded from the approved build scope until controls are satisfied.
 

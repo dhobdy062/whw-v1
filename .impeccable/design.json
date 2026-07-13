@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-13T19:09:54Z",
+  "title": "Design System: Warren Hall Seller Authority",
+  "extensions": {
+    "colorMeta": {
+      "bg": { "role": "neutral", "displayName": "True White", "canonical": "oklch(1 0 0)", "tonalRamp": ["oklch(0.15 0 0)", "oklch(0.26 0 0)", "oklch(0.38 0 0)", "oklch(0.5 0 0)", "oklch(0.62 0 0)", "oklch(0.74 0 0)", "oklch(0.86 0 0)", "oklch(0.95 0 0)"] },
+      "surface": { "role": "neutral", "displayName": "Quiet Blue Surface", "canonical": "oklch(0.965 0.004 250)", "tonalRamp": ["oklch(0.15 0.004 250)", "oklch(0.26 0.004 250)", "oklch(0.38 0.004 250)", "oklch(0.5 0.004 250)", "oklch(0.62 0.004 250)", "oklch(0.74 0.004 250)", "oklch(0.86 0.004 250)", "oklch(0.95 0.004 250)"] },
+      "ink": { "role": "neutral", "displayName": "Advisor Ink", "canonical": "oklch(0.16 0.025 255)", "tonalRamp": ["oklch(0.15 0.025 255)", "oklch(0.26 0.025 255)", "oklch(0.38 0.025 255)", "oklch(0.5 0.025 255)", "oklch(0.62 0.025 255)", "oklch(0.74 0.025 255)", "oklch(0.86 0.025 255)", "oklch(0.95 0.025 255)"] },
+      "muted": { "role": "neutral", "displayName": "Measured Slate", "canonical": "oklch(0.43 0.025 255)", "tonalRamp": ["oklch(0.15 0.025 255)", "oklch(0.26 0.025 255)", "oklch(0.38 0.025 255)", "oklch(0.5 0.025 255)", "oklch(0.62 0.025 255)", "oklch(0.74 0.025 255)", "oklch(0.86 0.025 255)", "oklch(0.95 0.025 255)"] },
+      "primary": { "role": "primary", "displayName": "Briefing Gold", "canonical": "oklch(0.64 0.145 68)", "tonalRamp": ["oklch(0.15 0.145 68)", "oklch(0.26 0.145 68)", "oklch(0.38 0.145 68)", "oklch(0.5 0.145 68)", "oklch(0.62 0.145 68)", "oklch(0.74 0.145 68)", "oklch(0.86 0.145 68)", "oklch(0.95 0.145 68)"] },
+      "primary-deep": { "role": "primary", "displayName": "Deep Gold", "canonical": "oklch(0.42 0.115 68)", "tonalRamp": ["oklch(0.15 0.115 68)", "oklch(0.26 0.115 68)", "oklch(0.38 0.115 68)", "oklch(0.5 0.115 68)", "oklch(0.62 0.115 68)", "oklch(0.74 0.115 68)", "oklch(0.86 0.115 68)", "oklch(0.95 0.115 68)"] },
+      "compass": { "role": "secondary", "displayName": "Compass Red", "canonical": "oklch(0.54 0.205 28)", "tonalRamp": ["oklch(0.15 0.205 28)", "oklch(0.26 0.205 28)", "oklch(0.38 0.205 28)", "oklch(0.5 0.205 28)", "oklch(0.62 0.205 28)", "oklch(0.74 0.205 28)", "oklch(0.86 0.205 28)", "oklch(0.95 0.205 28)"] },
+      "line": { "role": "neutral", "displayName": "Fine Line", "canonical": "oklch(0.86 0.01 255)", "tonalRamp": ["oklch(0.15 0.01 255)", "oklch(0.26 0.01 255)", "oklch(0.38 0.01 255)", "oklch(0.5 0.01 255)", "oklch(0.62 0.01 255)", "oklch(0.74 0.01 255)", "oklch(0.86 0.01 255)", "oklch(0.95 0.01 255)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero and section-defining statements only." },
+      "body": { "displayName": "Body", "purpose": "Direct explanations capped at 72ch." },
+      "label": { "displayName": "Label", "purpose": "Navigation, actions, authorship, and media state." }
+    },
+    "shadows": [
+      { "name": "interactive-low", "value": "0 4px 8px oklch(0.16 0.025 255 / 0.12)", "purpose": "Compact lift for interactive hover states only." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "State changes and the single composed first-load reveal." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "48rem" },
+      { "name": "wide", "value": "75rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Private Valuation Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The primary action for qualified seller conversations.",
+      "html": "<button class=\"ds-btn-primary\">Private Valuation</button>",
+      "css": ".ds-btn-primary { background: var(--color-primary); color: var(--color-ink); padding: 0.875rem 1.25rem; border: 0; border-radius: var(--radius-sm); font: 700 0.875rem/1.3 Arial, Helvetica, sans-serif; transition: background 180ms var(--ease-out), transform 180ms var(--ease-out); } .ds-btn-primary:hover { background: var(--color-primary-deep); color: var(--color-bg); transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }"
+    },
+    {
+      "name": "Private Consultation Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "The secondary action for buyers, relocation clients, and private conversations.",
+      "html": "<button class=\"ds-btn-secondary\">Private Consultation</button>",
+      "css": ".ds-btn-secondary { background: var(--color-ink); color: var(--color-bg); padding: 0.875rem 1.25rem; border: 0; border-radius: var(--radius-sm); font: 700 0.875rem/1.3 Arial, Helvetica, sans-serif; transition: background 180ms var(--ease-out); } .ds-btn-secondary:hover { background: var(--color-muted); } .ds-btn-secondary:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }"
+    },
+    {
+      "name": "Contact Field",
+      "kind": "input",
+      "description": "A clear, private-review-safe text field pattern for later approved forms.",
+      "html": "<label class=\"ds-field\"><span>Your email</span><input type=\"email\" placeholder=\"you@example.com\"></label>",
+      "css": ".ds-field { display: grid; gap: 0.5rem; color: var(--color-ink); font: 700 0.875rem/1.3 Arial, Helvetica, sans-serif; } .ds-field input { min-height: 3rem; padding: 0.75rem 0.875rem; border: 1px solid var(--color-line); border-radius: var(--radius-sm); background: var(--color-bg); color: var(--color-ink); font: 400 1rem/1.5 Arial, Helvetica, sans-serif; } .ds-field input:focus-visible { border-color: var(--color-ink); outline: 3px solid var(--color-primary); outline-offset: 2px; }"
+    },
+    {
+      "name": "Primary Navigation",
+      "kind": "nav",
+      "description": "Concise crawlable links with a visible active treatment.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">Sell</a><a href=\"#\">Market Mindset</a></nav>",
+      "css": ".ds-nav { display: flex; flex-wrap: wrap; gap: 1.25rem; font: 700 0.875rem/1.3 Arial, Helvetica, sans-serif; } .ds-nav a { color: var(--color-ink); text-decoration-color: transparent; text-underline-offset: 0.3em; transition: text-decoration-color 180ms var(--ease-out); } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { text-decoration-color: var(--color-primary-deep); } .ds-nav a:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }"
+    },
+    {
+      "name": "Market Mindset Item",
+      "kind": "card",
+      "description": "A question-led knowledge item with evidence and a canonical destination.",
+      "html": "<article class=\"ds-mindset\"><h3>What should I do before listing my Raleigh home?</h3><p>Warren explains the decisions that shape timing, presentation, and negotiation.</p><a href=\"#\">Read Warren's answer</a></article>",
+      "css": ".ds-mindset { max-width: 36rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-md); color: var(--color-ink); } .ds-mindset h3 { margin: 0 0 0.75rem; font: 400 1.75rem/1.15 Georgia, Times, serif; letter-spacing: -0.03em; } .ds-mindset p { margin: 0 0 1rem; color: var(--color-muted); font: 400 1rem/1.6 Arial, Helvetica, sans-serif; } .ds-mindset a { color: var(--color-ink); font: 700 0.875rem/1.3 Arial, Helvetica, sans-serif; text-underline-offset: 0.3em; } .ds-mindset a:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Private Market Briefing",
+    "overview": "The system should feel like a prepared advisor setting a concise, evidence-backed briefing in front of an established Triangle homeowner. True white reading space, ink-blue structure, a controlled honey-gold accent, and Warren's approved portrait create calm authority without borrowing the costumes of generic luxury marketing.\n\nThe composition is image-led and assured, with asymmetric pacing and generous breathing room. It rejects beige editorial clichés, brokerage-template sameness, influencer performance, and card-heavy AI scaffolding. Content remains useful and visible without motion; enhancements are quiet, purposeful, and fully reduced-motion safe.",
+    "keyCharacteristics": [
+      "Raleigh-native confidence expressed through specificity, not superlatives.",
+      "A committed dark-and-white structure with honey-gold reserved for decisive actions.",
+      "Warren and verified evidence lead; property inventory does not.",
+      "Page spacing uses the shared fluid page token and responsive layouts avoid clipped headlines."
+    ],
+    "rules": [
+      { "name": "The Honey-Gold Rule", "body": "Gold identifies meaningful decisions and scarce emphasis; it never washes entire reading surfaces.", "section": "colors" },
+      { "name": "The Brokerage Identity Rule", "body": "Compass red appears only when official identity requires it and never becomes the Warren Hall theme.", "section": "colors" },
+      { "name": "The Speaking Distance Rule", "body": "Display tracking never tightens beyond -0.03em, and body copy never extends beyond 72ch.", "section": "typography" },
+      { "name": "The Evidence Has Weight Rule", "body": "Hierarchy comes from content, contrast, scale, and spacing; decorative ghost cards are forbidden.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do lead with Warren's approved portrait and verified judgment before property inventory.",
+      "Do use true white, ink-blue structure, and the canonical honey-gold roles exactly as defined in the frontmatter.",
+      "Do keep every action keyboard accessible, every focus state visible, and every motion effect reduced-motion safe.",
+      "Do use asymmetric pacing and concrete Raleigh/Triangle evidence to make the experience feel like a private briefing.",
+      "Do reserve repeated containers for genuinely browsable Market Mindset collections."
+    ],
+    "donts": [
+      "Don't copy List It With Liza, Compass corporate pages, or generic Luxury Presence templates.",
+      "Don't use flashy mansion montages, playful influencer styling, hollow luxury language, or unsupported superlatives.",
+      "Don't use beige editorial clichés, repetitive card grids, or cold brokerage-template copy.",
+      "Don't use the editorial-magazine aesthetic lane of italic display serif, tiny mono labels, ruled columns, and monochromatic affectation.",
+      "Don't use gradient text, decorative glassmorphism, colored side-stripe borders, diagonal stripe backgrounds, decorative grids, or sketchy SVG scenes.",
+      "Don't exceed 0.75rem corner radii on cards and sections, pair a one-pixel border with a shadow blur of 16px or more, or clip long headings on small screens."
+    ]
+  }
+}
