@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Warren Hall">
+  <rect width="64" height="64" rx="8" fill="#071f3b"/>
+  <path d="M10 12h44v40H10z" fill="none" stroke="#d9a43b" stroke-width="2"/>
+  <path d="M17 22l6 22 9-16 9 16 6-22" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+</svg>

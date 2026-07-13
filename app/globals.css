@@ -146,8 +146,11 @@ img {
 
 .desktop-nav a,
 .footer-inner nav a {
+  align-items: center;
+  display: inline-flex;
   font-size: 0.86rem;
   font-weight: 700;
+  min-height: 2.75rem;
   text-decoration-color: transparent;
   text-underline-offset: 0.35rem;
   transition: color 180ms var(--ease-out), text-decoration-color 180ms var(--ease-out);
@@ -399,10 +402,12 @@ img {
 }
 
 .text-link {
+  align-items: center;
   color: var(--color-primary-deep);
-  display: inline-block;
+  display: inline-flex;
   font-weight: 700;
   margin-top: 0.75rem;
+  min-height: 2.75rem;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.35rem;
 }
@@ -512,8 +517,11 @@ img {
 }
 
 .mindset-status a {
+  align-items: center;
   color: var(--color-primary-deep);
+  display: inline-flex;
   font-weight: 700;
+  min-height: 2.75rem;
 }
 
 .collection-action {
@@ -571,8 +579,11 @@ img {
 }
 
 .footer-name {
+  align-items: center;
+  display: inline-flex;
   font-family: Georgia, Times, serif;
   font-size: 1.7rem;
+  min-height: 2.75rem;
   text-decoration: none;
 }
 
@@ -638,9 +649,12 @@ img {
 }
 
 .topic-cluster-nav a {
+  align-items: center;
   color: var(--color-muted);
+  display: inline-flex;
   font-size: 0.88rem;
   font-weight: 700;
+  min-height: 2.75rem;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.35rem;
 }
