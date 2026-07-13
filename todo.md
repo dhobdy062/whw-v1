@@ -42,10 +42,10 @@ Create an owned lead-generation asset that can convert seller valuation requests
 - [x] Governance Agent review completed and incorporated; approved for private development only.
 - [x] Compass affiliation confirmed by Don; exact brokerage-required wording and firm/license display remain part of public-launch review.
 - [x] Sales-volume and designation claims confirmed by Don for inclusion; retain source evidence in the launch record.
-- [ ] Fair Housing, privacy/consent, and lead-handling language reviewed.
+- [x] Fair Housing and private-review privacy/consent posture reviewed; no live form, CRM submission, analytics, cookies, or personal-data collection exists.
 - [ ] Supplied/Instagram photos, listing media, testimonials, logos, and third-party assets have documented publication permission.
 - [x] Don supplied `warren-hall-top-100.png` in this task and approved it for the private review build.
-- [ ] Public release remains disabled until Warren/BIC approval; private review is clearly identified.
+- [x] Public release remains disabled until Warren/BIC approval; private review is clearly identified and owner-only Sites access is enabled.
 - [x] Public launch, live lead submission, real listing/testimonial publication, and brokerage-logo use are excluded from the approved build scope until controls are satisfied.
 
 ### Verification Status
@@ -56,16 +56,22 @@ Create an owned lead-generation asset that can convert seller valuation requests
 - [x] Revised specification approved by Don on July 13, 2026.
 - [x] Executable implementation plan created.
 - [x] Task 1 Sites foundation and production-build verification complete.
-- [ ] Full approved-site implementation complete.
-- [ ] Full experience verification complete.
-- [ ] Private review URL published.
+- [x] Task 2 typed Market Mindset content model implemented and independently approved.
+- [x] Task 3 shared shell and seller-led homepage implemented; automated gates and independent review passed.
+- [x] Task 4 Market Mindset collection, eight canonical answer routes, search metadata, Article/Breadcrumb structured data, sitemap, and robots policy implemented and independently approved.
+- [x] Task 5 About page, social metadata, and one inspected 1200x630 generated preview image implemented.
+- [x] Full approved-site implementation complete.
+- [x] Full experience verification complete: 16/16 tests, lint, production build, desktop/mobile browser checks, 44px target measurements, link flow, image delivery, and independent release audit passed.
+- [x] Governance closeout passed for private hosting and remains a no-go for public launch.
+- [x] Private review URL published and verified: https://warren-hall-raleigh.donchalant.chatgpt.site
 
 ### Open Issues
-- Final claim wording, brokerage-required disclosure, domain, CRM/lead destination, Instagram media permissions, and IDX scope remain to be recorded.
-- Governance decision: private design/build may proceed with neutral disclosures and licensed provisional imagery; public launch remains a no-go until brokerage/BIC approval, substantiated claims, asset permissions, Fair Housing review, and privacy/CRM ownership are documented.
+- Public launch remains blocked pending Warren/BIC approval, exact brokerage and license disclosure, documentary marketing support for claims, public-use rights for the supplied portrait/award badge and generated preview, approved domain/contact/CRM/privacy language, Fair Housing advertising review, source refresh, and an explicit indexing decision.
+- Sites is owner-only and public-by-link only after an authorized viewer signs in; robots/noindex reduce discovery but do not replace access control.
+- Dependency audit findings remain to be patched or formally risk-accepted before public launch; the current private review has no user-input, database, or external-fetch path.
 
 ### Final Outcome
-In progress.
+Completed July 13, 2026. The seller-led homepage, About page, Market Mindset collection, and eight answer pages were built with the supplied Warren portrait and the approved Compass, volume, Top 100, Senior Broker, and six-year producer claims. One generated 1200x630 social card was inspected and saved without a brokerage logo, listing, invented award, watermark, or extra text. Implementation used the Sites, Impeccable, image-generation, Playwright, and in-app browser workflows plus scoped build, verification, governance, and review agents. Final checks passed with 16/16 tests, clean lint, a successful production build, clean desktop/mobile browser behavior, correct 44px targets, owner-only private access, disabled lead submission, no VideoObject for draft media, no IndexNow, and no conflicting brokerage assets. Hosted verification returned HTTP 200 for the homepage, About, collection, a direct answer, robots, sitemap, portrait, and social preview; canonical, schema, robots, and all 11 sitemap URLs use the real Sites origin with no `.example` fallback.
 
 ## Mission
 Build a credible, luxury-positioned online presence for a Raleigh-area real estate agent, starting with a conversion-focused website and then adding a repeatable content and lead-generation engine for Instagram, TikTok/Reels, and Pinterest.
