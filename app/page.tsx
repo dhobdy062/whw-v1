@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MarketMindsetCard } from "./components/market-mindset-card";
 import { marketMindsetEntries } from "./data/market-mindset";
 
@@ -49,6 +50,7 @@ export default function HomePage() {
             width={804}
             height={798}
             priority
+            unoptimized
             sizes="(max-width: 48rem) calc(100vw - 2.5rem), (max-width: 68rem) 38vw, 32vw"
           />
           <figcaption>
@@ -138,9 +140,9 @@ export default function HomePage() {
             <MarketMindsetCard key={entry.slug} entry={entry} />
           ))}
         </div>
-        <a className="button button-secondary collection-action" href="/market-mindset">
+        <Link className="button button-secondary collection-action" href="/market-mindset">
           Explore every question
-        </a>
+        </Link>
       </section>
 
       <section className="local-section">
