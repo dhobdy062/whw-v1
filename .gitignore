@@ -1,0 +1,9 @@
+.worktrees/
+node_modules/
+.vinext/
+.open-next/
+dist/
+.wrangler/
+.DS_Store
+.superpowers/
+.playwright-cli/
