@@ -73,8 +73,9 @@ The included `.openai/hosting.json` is intentionally neutral and is not linked
 to the existing private-review deployment. A hosting provider can create its
 own project binding from this repository.
 
-Set `NEXT_PUBLIC_SITE_URL` to the final public origin before launch so canonical
-URLs, the sitemap, and social metadata point to the correct domain.
+Production metadata defaults to `https://whw-v1.vercel.app`. Set
+`NEXT_PUBLIC_SITE_URL` when a final custom domain is approved so canonical URLs,
+the sitemap, and social metadata move to that origin.
 
 ## Public-launch checklist
 

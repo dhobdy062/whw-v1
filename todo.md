@@ -22,6 +22,15 @@ Cloudflare/Vite-oriented artifact instead.
 5. [ ] Commit and push the repair, then verify the replacement Vercel deployment,
    public aliases, representative routes, and runtime errors.
 
+### Observed Results
+- The first repaired deployment reached `READY`; the homepage, About, Market
+  Mindset collection, one canonical answer, robots, sitemap, portrait, and
+  social image returned HTTP 200 with no runtime-error cluster.
+- Live inspection found the placeholder `.example` metadata origin still in the
+  sitemap and social metadata because `NEXT_PUBLIC_SITE_URL` was unset.
+- The production fallback was corrected to the verified
+  `https://whw-v1.vercel.app` alias; a custom domain can override it later.
+
 ### Governance Checks
 - [x] Limit changes to the build/runtime contract and documentation.
 - [x] Preserve private-review `noindex` controls and disabled lead submission.
