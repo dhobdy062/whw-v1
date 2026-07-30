@@ -23,7 +23,8 @@ npm ci
 npm run dev
 ```
 
-Open the local URL shown in the terminal.
+Open the local URL shown in the terminal. The primary runtime is standard
+Next.js so the repository follows Vercel's native `.next` build contract.
 
 ## Quality checks
 

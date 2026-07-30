@@ -1,5 +1,38 @@
 # Warren Realty Project — Operating Plan
 
+## Vercel Native-Build Recovery — 2026-07-30
+
+### Mission
+Repair the failed Vercel production deployment for `whw-v1` without changing
+the approved website experience.
+
+### Root Cause
+Vercel correctly detected a Next.js application and expected a `.next` output
+directory, but the repository's build script invoked Vinext and emitted a
+Cloudflare/Vite-oriented artifact instead.
+
+### Task Flow
+1. [x] Confirm the failed production deployment, project identity, framework
+   preset, commit, and output-directory error.
+2. [x] Prove the application compiles under native Next.js and isolate the
+   remaining type-check failure to unused Cloudflare starter files.
+3. [x] Restore native Next.js development, build, and start scripts; pin the
+   Node.js major version; isolate optional Cloudflare files from app type-checking.
+4. [x] Run tests, lint, and the native production build locally.
+5. [ ] Commit and push the repair, then verify the replacement Vercel deployment,
+   public aliases, representative routes, and runtime errors.
+
+### Governance Checks
+- [x] Limit changes to the build/runtime contract and documentation.
+- [x] Preserve private-review `noindex` controls and disabled lead submission.
+- [x] Do not commit Vercel credentials or local project-link metadata.
+- [ ] Verify production rather than treating a successful local build as release proof.
+
+### Definition of Done
+The Git-triggered Vercel deployment reaches `READY`, the production alias and
+representative routes return successfully, required images load, and no
+production runtime-error cluster is present.
+
 ## GitHub Publication — 2026-07-30
 
 ### Mission
