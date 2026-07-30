@@ -19,7 +19,7 @@ Cloudflare/Vite-oriented artifact instead.
 3. [x] Restore native Next.js development, build, and start scripts; pin the
    Node.js major version; isolate optional Cloudflare files from app type-checking.
 4. [x] Run tests, lint, and the native production build locally.
-5. [ ] Commit and push the repair, then verify the replacement Vercel deployment,
+5. [x] Commit and push the repair, then verify the replacement Vercel deployment,
    public aliases, representative routes, and runtime errors.
 
 ### Observed Results
@@ -35,12 +35,28 @@ Cloudflare/Vite-oriented artifact instead.
 - [x] Limit changes to the build/runtime contract and documentation.
 - [x] Preserve private-review `noindex` controls and disabled lead submission.
 - [x] Do not commit Vercel credentials or local project-link metadata.
-- [ ] Verify production rather than treating a successful local build as release proof.
+- [x] Verify production rather than treating a successful local build as release proof.
 
 ### Definition of Done
 The Git-triggered Vercel deployment reaches `READY`, the production alias and
 representative routes return successfully, required images load, and no
 production runtime-error cluster is present.
+
+### Verification Status
+- [x] Native Next.js deployment for commit `05bf6a0` reached `READY`.
+- [x] Production aliases were assigned without alias errors.
+- [x] Homepage, About, Market Mindset, one answer page, robots, sitemap, social
+  image, and Warren portrait returned HTTP 200.
+- [x] Production HTML, robots, and sitemap contain zero `.example` origins and
+  use `https://whw-v1.vercel.app`.
+- [x] Vercel reported no production runtime-error clusters after route checks.
+- [x] Private-review robots policy remains `Disallow: /`.
+
+### Final Outcome
+Completed July 30, 2026. The failed Vinext/`.next` output mismatch was replaced
+with Vercel's native Next.js build contract. Production is healthy at
+`https://whw-v1.vercel.app` and remains intentionally blocked from indexing
+pending the existing public-launch approvals.
 
 ## GitHub Publication — 2026-07-30
 
