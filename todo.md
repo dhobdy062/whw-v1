@@ -15,9 +15,9 @@ from the website's TypeScript program.
 ### Verification
 - [x] Error reproduced: Vercel requires `.next` after the Vinext build.
 - [x] Native build reproduced the remaining unused `cloudflare:workers` type error.
-- [ ] Native build, tests, and lint pass after the scoped runtime-contract repair.
-- [ ] The corrected preview is committed, pushed, and reaches `READY` on Vercel.
-- [ ] Preview routes and metadata are checked after deployment.
+- [x] Native build, tests, and lint pass after the scoped runtime-contract repair.
+- [x] The corrected preview is committed, pushed, and reaches `READY` on Vercel.
+- [x] Preview alias returns Vercel's expected private-review SSO redirect and `noindex` header.
 
 ### Governance
 - Scope is limited to build contract, TypeScript exclusions, and build-output ignore rules.
