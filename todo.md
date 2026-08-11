@@ -1,5 +1,28 @@
 # Warren Realty Project — Operating Plan
 
+## Preview Build Recovery — 2026-08-11
+
+### Mission
+Restore the Vercel preview build without changing Warren's approved website UI.
+
+### Root Cause and Repair
+Vercel detects this repository as Next.js and expects `.next`, while the
+current branch still runs Vinext and emits Cloudflare/Vite output. The native
+Next.js build also checked unused Cloudflare starter code. The repair restores
+the native Next scripts and excludes only inactive Cloudflare support folders
+from the website's TypeScript program.
+
+### Verification
+- [x] Error reproduced: Vercel requires `.next` after the Vinext build.
+- [x] Native build reproduced the remaining unused `cloudflare:workers` type error.
+- [ ] Native build, tests, and lint pass after the scoped runtime-contract repair.
+- [ ] The corrected preview is committed, pushed, and reaches `READY` on Vercel.
+- [ ] Preview routes and metadata are checked after deployment.
+
+### Governance
+- Scope is limited to build contract, TypeScript exclusions, and build-output ignore rules.
+- No credentials, deployment-link metadata, or production content changes are included.
+
 ## Active Mission — Warren Hall Website
 
 ### Mission
