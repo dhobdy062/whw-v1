@@ -12,7 +12,7 @@ website without inventing listing details.
 - [x] Preserved private-review indexing controls and omitted unapproved addresses, prices, and property claims.
 - [x] Verified desktop and 390px mobile rendering; all ten images load and there is no horizontal overflow.
 - [x] Build, lint, and 16 automated tests pass locally.
-- [ ] Publish and verify the production Vercel deployment.
+- [x] Published and verified the production Vercel deployment at `https://whw-v1.vercel.app/listings`.
 
 ## Preview Build Recovery — 2026-08-11
 
