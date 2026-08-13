@@ -1,5 +1,19 @@
 # Warren Realty Project — Operating Plan
 
+## Featured Listings Gallery — 2026-08-13
+
+### Mission
+Make Warren's supplied MLS property photography visible in the live dark-mode
+website without inventing listing details.
+
+### Delivery and Verification
+- [x] Copied and checksum-verified the ten requested images from the staged Warren gallery.
+- [x] Added the visible `/listings` route, primary navigation link, and sitemap entry.
+- [x] Preserved private-review indexing controls and omitted unapproved addresses, prices, and property claims.
+- [x] Verified desktop and 390px mobile rendering; all ten images load and there is no horizontal overflow.
+- [x] Build, lint, and 16 automated tests pass locally.
+- [ ] Publish and verify the production Vercel deployment.
+
 ## Preview Build Recovery — 2026-08-11
 
 ### Mission

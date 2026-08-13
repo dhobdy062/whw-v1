@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: siteOrigin, lastModified: latestModifiedAt },
     { url: `${siteOrigin}/about`, lastModified: latestModifiedAt },
+    { url: `${siteOrigin}/listings`, lastModified: latestModifiedAt },
     { url: `${siteOrigin}/market-mindset`, lastModified: latestModifiedAt },
     ...marketMindsetEntries.map((entry) => ({
       url: `${siteOrigin}/market-mindset/${entry.slug}`,
