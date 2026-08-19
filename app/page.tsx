@@ -66,8 +66,8 @@ export default function HomePage() {
             <Image
               src="/warren-hall-portrait-cutout.png"
               alt="Warren Hall, Compass REALTOR and Senior Broker, recognized among the 2026 Triangle Real Producers Top 100."
-              width={804}
-              height={1072}
+              width={678}
+              height={798}
               priority
               unoptimized
               sizes="(max-width: 48rem) calc(100vw - 2.5rem), (max-width: 68rem) 34vw, 24vw"
