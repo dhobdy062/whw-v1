@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MarketMindsetCard } from "./components/market-mindset-card";
 import { marketMindsetEntries } from "./data/market-mindset";
+import { featuredListings } from "./data/featured-listings";
 
 const featuredSlugs = [
   "fix-before-listing-750k-home",
@@ -15,49 +16,75 @@ const featuredEntries = featuredSlugs.flatMap((slug) => {
   return entry ? [entry] : [];
 });
 
+// Backdrop sequence behind the hero copy. All eight curated property photos
+// cross-fade on a pure-CSS loop (see .hero-property-image in globals.css) —
+// no client JS required.
+const heroBackdropListings = featuredListings;
+
 export default function HomePage() {
   return (
     <main id="main-content">
-      <section className="hero section-shell" aria-labelledby="hero-title">
-        <div className="hero-copy">
-          <p className="context-line">Compass REALTOR® / Senior Broker</p>
-          <h1 id="hero-title">
-            Clear judgment for selling well in Raleigh and across the Triangle.
-          </h1>
-          <p className="hero-intro">
-            Warren Hall helps established homeowners prepare, position, and
-            negotiate a move with the care of a private market briefing.
-          </p>
-          <p className="hero-proof-line">
-            More than $120M in closed volume over eight years.
-          </p>
-          <div className="action-row">
-            <a className="button button-primary" href="#contact">
-              Request a Private Valuation
-            </a>
-            <a className="button button-secondary" href="#buy">
-              Plan a Private Consultation
-            </a>
+      <section className="hero-portfolio" aria-labelledby="hero-title">
+        <div className="hero-portfolio-grid">
+          <div className="hero-property-sequence" aria-hidden="true">
+            {heroBackdropListings.map((listing, index) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={listing.number}
+                src={listing.image}
+                alt=""
+                className={`hero-property-image hero-property-image-${index + 1}`}
+              />
+            ))}
           </div>
-          <p className="review-note">
-            Private review — these actions do not submit an inquiry.
-          </p>
+          <div className="hero-portfolio-copy">
+            <p className="context-line">Compass REALTOR® / Senior Broker</p>
+            <h1 id="hero-title">
+              Raleigh-native perspective. Experience-led advice. Private next
+              steps.
+            </h1>
+            <p className="hero-intro">
+              A trusted advisor for navigating the Triangle&apos;s real estate
+              marketing.
+            </p>
+            <p className="hero-proof-line">
+              More than $120M in closed volume over eight years.
+            </p>
+            <div className="action-row">
+              <a className="button button-primary" href="#contact">
+                Request a Private Valuation
+              </a>
+              <a className="button button-secondary" href="#buy">
+                Plan a Private Consultation
+              </a>
+            </div>
+            <p className="review-note">
+              Private review — these actions do not submit an inquiry.
+            </p>
+          </div>
+          <figure className="hero-portrait-card">
+            <Image
+              src="/warren-hall-portrait-cutout.png"
+              alt="Warren Hall, Compass REALTOR and Senior Broker, recognized among the 2026 Triangle Real Producers Top 100."
+              width={804}
+              height={1072}
+              priority
+              unoptimized
+              sizes="(max-width: 48rem) calc(100vw - 2.5rem), (max-width: 68rem) 34vw, 24vw"
+            />
+            <figcaption className="hero-portrait-badge">
+              <p className="hero-portrait-badge-kicker">
+                Triangle Real Producers
+              </p>
+              <p className="hero-portrait-badge-title">
+                Top <em>100</em>
+              </p>
+              <p className="hero-portrait-badge-caption">
+                Platform authority, grounded in personal guidance.
+              </p>
+            </figcaption>
+          </figure>
         </div>
-        <figure className="hero-portrait">
-          <Image
-            src="/warren-hall-top-100.png"
-            alt="Warren Hall, Compass REALTOR and Senior Broker, recognized among the 2026 Triangle Real Producers Top 100."
-            width={804}
-            height={798}
-            priority
-            unoptimized
-            sizes="(max-width: 48rem) calc(100vw - 2.5rem), (max-width: 68rem) 38vw, 32vw"
-          />
-          <figcaption>
-            Raleigh-native perspective. Experience-led advice. Private next
-            steps.
-          </figcaption>
-        </figure>
       </section>
 
       <section className="authority-section" aria-labelledby="authority-title">

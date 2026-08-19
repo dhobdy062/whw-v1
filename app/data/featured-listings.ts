@@ -7,7 +7,7 @@ export type FeaturedListing = {
 // details are deliberately omitted until the listing records and disclosures
 // approved for publication are available.
 export const featuredListings: FeaturedListing[] = Array.from(
-  { length: 10 },
+  { length: 8 },
   (_, index) => {
     const number = String(index + 1).padStart(2, "0");
 
