@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRef } from "react";
 
 const navigation = [
-  { label: "Sell", href: "/#sell" },
+  { label: "Sell", href: "/sell" },
   { label: "Buy & Relocate", href: "/#buy" },
   { label: "Featured Listings", href: "/listings" },
   { label: "Market Mindset", href: "/market-mindset" },

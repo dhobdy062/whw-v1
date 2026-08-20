@@ -115,19 +115,19 @@ export default function HomePage() {
         </div>
         <div className="narrative-copy">
           <p>
-            Warren starts with the property, the competing choices buyers will
-            see, and the seller&apos;s priorities. That creates a practical plan
-            for preparation, positioning, and presentation without assuming
-            every home needs a renovation.
+            For properties valued at $750,000 and above, Warren starts with the
+            property, the competing choices buyers will see, and the seller&apos;s
+            priorities. That creates a practical plan for preparation,
+            positioning, and presentation without assuming every home needs a
+            renovation.
           </p>
           <p>
-            Once the home is active, communication and negotiation stay tied to
-            real buyer response. The objective is a considered decision at each
-            stage—not a promise about price, timing, or outcome.
+            Every recommendation is specific to the property and current market
+            conditions; it is not a promise about price, timing, or outcome.
           </p>
-          <a className="text-link" href="#contact">
-            Discuss your selling plan
-          </a>
+          <Link className="text-link" href="/sell">
+            Explore seller representation
+          </Link>
         </div>
       </section>
 

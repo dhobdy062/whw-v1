@@ -1,5 +1,46 @@
 # Warren Realty Project — Operating Plan
 
+## Seller Content Expansion — 2026-08-20
+
+### Mission
+Add Don-supplied luxury seller-positioning content to the existing Seller section of the private-review site, retaining its approved dark Strategic Portfolio design and internal Market Mindset route.
+
+### Financial Objective
+Increase relevance and confidence for prospective Triangle $750K+ sellers, supporting confidential valuation consultations.
+
+### Task Flow
+1. Confirm active source and Seller-section structure. Complete.
+2. Review supplied claims and content scope. Complete: local/private-review only; pricing/speed guarantees softened and documented claim wording retained.
+3. Implement semantic, responsive seller content with an internal `/market-mindset` CTA. Complete.
+4. Build, lint, test, and inspect desktop/mobile rendering. Complete pending independent verifier review.
+
+### Governance Checks
+- [x] Preserve private-review/no-submission behavior; no deployment, CRM, analytics, or indexing changes.
+- [x] Retain documented claim language and soften outcome guarantees pending broker evidence/approval.
+- [x] Use no third-party assets or external links for the supplied content.
+- [x] Verify semantic headings, responsive table behavior, and internal link behavior. The table remains keyboard-focusable; desktop and 390px rendering show no page-level horizontal overflow.
+
+### Verification Status
+- [x] `npm run lint` passed.
+- [x] `npm run build` passed.
+- [x] Desktop and 390px local-browser review passed: Seller content renders; the table scrolls within its own container at mobile width; no console warnings/errors; the internal Market Mindset CTA reaches `/market-mindset`.
+- [x] Independent verifier review passed: scope is confined to Seller content/CSS/todo; internal link, semantic table, private-review behavior, and claim controls confirmed.
+- [!] `npm test` has one pre-existing failure: `tests/portrait-delivery.test.tsx` expects `/warren-hall-top-100.png`, while the current unrelated hero uses `/warren-hall-portrait-cutout.png`. The remaining 15 tests pass; this Seller-content update does not touch portrait delivery.
+
+### Definition of Done
+The Seller section contains the supplied themes, uses the existing visual system, links internally to Market Mindset, has no unrelated page changes, and passes scoped verification.
+
+## Standalone Seller Page and Metadata — 2026-08-20
+
+### Mission
+Move the Seller content from the homepage to its own `/sell` page and apply Don-supplied SEO and social metadata there.
+
+### Scope and Verification
+- [x] Restored general homepage metadata and removed duplicate long-form Seller content from the homepage.
+- [x] Added a standalone `/sell` route with the supplied title and description, canonical URL, sitemap entry, and internal navigation.
+- [x] Preserved the existing private-review `noindex, nofollow` policy, canonical origin, images, and all page content.
+- [x] Verified `/sell` rendered metadata, canonical URL, navigation, desktop and 390px mobile layout, and production build. No console errors or page-level horizontal overflow observed; the mobile table scrolls in its own focusable container.
+
 ## Featured Listings Gallery — 2026-08-13
 
 ### Mission

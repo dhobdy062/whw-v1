@@ -678,6 +678,10 @@ img {
   flex: 1 1 0;
 }
 
+.seller-content {
+  flex: 1 1 0;
+}
+
 .section-heading h2,
 .about-statement h2,
 .collection-heading h2 {
@@ -690,6 +694,163 @@ img {
   color: var(--color-muted);
   font-size: 1.04rem;
   margin: 0 0 1.25rem;
+}
+
+.seller-content > p,
+.seller-mindset p,
+.seller-valuation p {
+  color: var(--color-muted);
+  font-size: 1.04rem;
+  margin: 0 0 1.25rem;
+}
+
+.seller-advantage,
+.seller-concierge,
+.seller-mindset,
+.seller-valuation {
+  border-top: 1px solid var(--color-line);
+  margin-top: 2.75rem;
+  padding-top: 2.75rem;
+}
+
+.seller-content h3 {
+  font-family: Georgia, Times, serif;
+  font-size: clamp(1.55rem, 2.5vw, 2.25rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0 0 1.25rem;
+}
+
+.seller-advantage ul {
+  border-top: 1px solid var(--color-line);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.seller-advantage li {
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-muted);
+  padding: 1rem 0;
+}
+
+.seller-advantage strong {
+  color: var(--color-ink);
+}
+
+.seller-table-wrap {
+  border: 1px solid var(--color-line);
+  overflow-x: auto;
+}
+
+.seller-table-wrap:focus-visible {
+  outline-offset: 4px;
+}
+
+.seller-table-wrap table {
+  border-collapse: collapse;
+  min-width: 44rem;
+  width: 100%;
+}
+
+.seller-table-wrap th,
+.seller-table-wrap td {
+  border-bottom: 1px solid var(--color-line);
+  padding: 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.seller-table-wrap thead th {
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.seller-table-wrap tbody th {
+  color: var(--color-ink);
+  font-family: Georgia, Times, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  width: 27%;
+}
+
+.seller-table-wrap td {
+  color: var(--color-muted);
+  font-size: 0.94rem;
+}
+
+.seller-table-wrap tbody tr:last-child th,
+.seller-table-wrap tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.seller-page-hero {
+  border-bottom: 1px solid var(--color-line);
+  padding-block: clamp(4.5rem, 9vw, 8rem);
+}
+
+.seller-page-hero h1,
+.seller-page-heading h2,
+.seller-page-valuation h2 {
+  font-size: clamp(2.5rem, 5.6vw, 5rem);
+  font-weight: 400;
+  margin: 0;
+  max-width: 14ch;
+}
+
+.seller-page-intro {
+  color: var(--color-muted);
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  line-height: 1.65;
+  margin: 1.5rem 0 2rem;
+  max-width: 46rem;
+}
+
+.seller-page-section {
+  align-items: start;
+  display: grid;
+  gap: clamp(3rem, 8vw, 8rem);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  padding-block: clamp(4.5rem, 9vw, 8rem);
+}
+
+.seller-page-band {
+  background: var(--color-surface);
+  border-block: 1px solid var(--color-line);
+}
+
+.seller-advantage-list {
+  border-top: 1px solid var(--color-line);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.seller-advantage-list li {
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-muted);
+  padding: 1rem 0;
+}
+
+.seller-advantage-list strong {
+  color: var(--color-ink);
+}
+
+.seller-page-valuation {
+  align-items: start;
+  display: grid;
+  gap: clamp(2.5rem, 8vw, 8rem);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  padding-block: clamp(4.5rem, 9vw, 8rem);
+}
+
+.seller-page-valuation > div:last-child p {
+  color: var(--color-muted);
+  font-size: 1.04rem;
+  margin: 0 0 1.5rem;
 }
 
 .text-link {
@@ -1410,6 +1571,11 @@ img {
   .collection-heading {
     align-items: flex-start;
     gap: 1.5rem;
+  }
+
+  .seller-page-section,
+  .seller-page-valuation {
+    grid-template-columns: 1fr;
   }
 
   .mindset-card:nth-child(even) {
