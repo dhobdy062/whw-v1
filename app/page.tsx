@@ -54,7 +54,7 @@ export default function HomePage() {
               <a className="button button-primary" href="#contact">
                 Request a Private Valuation
               </a>
-              <a className="button button-secondary" href="#buy">
+              <a className="button button-secondary" href="/buy">
                 Plan a Private Consultation
               </a>
             </div>
@@ -144,8 +144,8 @@ export default function HomePage() {
               helps clients compare those tradeoffs before choosing whether to
               buy first, sell first, or coordinate both.
             </p>
-            <a className="text-link" href="#contact">
-              Plan a private consultation
+            <a className="text-link" href="/buy">
+              Explore buyer representation
             </a>
           </div>
         </div>

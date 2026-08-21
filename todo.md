@@ -1,5 +1,27 @@
 # Warren Realty Project — Operating Plan
 
+## Buyer Page and Metadata — 2026-08-21
+
+### Mission
+Add Don-supplied $750K+ Triangle buyer content as a dedicated private-review `/buy` page, with metadata and an internal Market Mindset destination.
+
+### Financial Objective
+Support qualified Raleigh/Triangle luxury buyer and relocation consultations.
+
+### Delivery and Governance
+- [x] Added the standalone `/buy` route with the supplied title, description, canonical URL, Open Graph/Twitter metadata, semantic enclave table, buyer-advantage list, and consultation CTA.
+- [x] Updated primary navigation from the homepage buyer anchor to `/buy` and added `/buy` to the sitemap.
+- [x] Replaced the supplied Google/example.com Market Mindset link with the established internal `/market-mindset` route.
+- [x] Preserved private-review `noindex, nofollow` behavior and made no deployment, indexing, analytics, form/CRM, or external-data changes.
+- [!] Copy is user-supplied and remains subject to Warren/BIC evidence and approval before public release, particularly the listed-properties, Top 100, top-1%-agent, early-access, and advantage claims.
+
+### Verification Status
+- [x] Test-first route coverage: focused Buyer-page metadata/content/internal-link test passes (2/2).
+- [x] `npm run lint` passed.
+- [x] `npm run build` passed, including static generation of `/buy`.
+- [x] Playwright browser verification passed at 1440px and 390px: correct title, desktop/mobile navigation, semantic table, internal Market Mindset link, complete visible copy, no console errors, and mobile table containment. Temporary screenshots were removed from the worktree after review.
+- [!] Full test suite: 18/19 tests pass. The sole unrelated pre-existing failure remains `tests/portrait-delivery.test.tsx`, which expects the retired `/warren-hall-top-100.png` instead of the current `/warren-hall-portrait-cutout.png`; this Buyer-page task does not modify portrait delivery.
+
 ## Seller Content Expansion — 2026-08-20
 
 ### Mission

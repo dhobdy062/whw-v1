@@ -54,9 +54,12 @@ describe("Market Mindset content", () => {
   it("publishes the complete canonical route inventory", () => {
     const records = sitemap();
 
-    expect(records).toHaveLength(12);
+    expect(records).toHaveLength(14);
     expect(records).toContainEqual(
       expect.objectContaining({ url: expect.stringContaining("/listings") }),
+    );
+    expect(records).toContainEqual(
+      expect.objectContaining({ url: expect.stringMatching(/\/buy$/) }),
     );
     for (const entry of marketMindsetEntries) {
       expect(records).toContainEqual(

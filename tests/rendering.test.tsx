@@ -50,6 +50,17 @@ it("renders the approved seller authority message", () => {
   expect(html).toMatch(/<h2[^>]*>Market Mindset<\/h2>/i);
 });
 
+it("routes buyer calls to action to the dedicated buyer page", () => {
+  const html = renderToStaticMarkup(<HomePage />);
+
+  expect(html).toMatch(
+    /<a[^>]*href="\/buy"[^>]*>\s*Plan a Private Consultation\s*<\/a>/i,
+  );
+  expect(html).toMatch(
+    /<a[^>]*href="\/buy"[^>]*>\s*Explore buyer representation\s*<\/a>/i,
+  );
+});
+
 it("renders the verified Warren Hall author profile", () => {
   const html = renderToStaticMarkup(<AboutPage />);
 
