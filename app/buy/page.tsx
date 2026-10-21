@@ -30,8 +30,8 @@ export default function BuyerPage() {
         <p className="seller-page-intro">
           Finding an exceptional home in the Raleigh-Durham region requires
           local precision, hyper-focused market data, and an insider&apos;s
-          perspective. With over $120 million in listed properties over the
-          past eight years and a rank among the Top 100 Realtors in the area,
+          perspective. With more than $120M in closed volume over eight years and 2026 Top
+          100 Triangle Real Producers recognition,
           Warren Hall provides buyers with a distinct advantage in homes priced
           from $750,000 and above. As a Raleigh native, Warren combines
           lifetime regional insight with high-caliber representation across the
